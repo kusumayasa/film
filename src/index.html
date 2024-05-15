@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <title>Yasa Film</title> 
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark sticky-top">
+        <div class="container-sm">
+            <a class="navbar-brand">Yasa Film</a>
+            <div iv class="d-flex" role="search">
+                <input class="form-control keyword-yang-diinput me-2" type="search" placeholder="Cari film...">
+                <button class="tombol-keramat btn btn-primary">Cari</button>
+            </div>
+        </div>
+    </nav>
+    <div class="card border-0">
+        <!-- <div class="card-header">
+        </div> -->
+        <div class="card-body bg-secondary">
+            <section class="disini container-sm pt-5">
+                <film-list class="container-film card-group row row-cols-md-2 row-cols-lg-4 row-cols-1 g-2" >
+                    <!-- <film-item class="pr-2">
+                        <div class="card">
+                            <img src="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Dilan</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2020</h6>
+                                <p class="card-text">Pada suatu hari</p>
+                                <a href="#" class="btn btn-primary">Detail</a>
+                            </div>
+                        </div>
+                    </film-item> -->
+                </film-list>
+            </section>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modalDetailFilm" tabindex="-1" aria-labelledby="modalDetailFilmLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalDetailFilmLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="" class="img-fluid">
+                                    </div>
+                                    <div class="col-md">
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><h3>Avangers (2016)</h3></li>
+                                            <li class="list-group-item"><b>Sutradara :</b> Yasa</li>
+                                            <li class="list-group-item"><b>Aktor :</b> yasa</li>
+                                            <li class="list-group-item"><b>Penulis :</b> yasa</li>
+                                            <li class="list-group-item"><b>Sinopsis :</b> pada suatu hari</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer text-bg-dark text-center">
+            Copyright 2022. Kusuma Yasa
+        </div>
+    </div>
+</body>
+</html>
