@@ -46,7 +46,7 @@ const truncateText = (text) => {
 
 window.addEventListener("load", () => {
     $.ajax({
-        url:`http://www.omdbapi.com/?apikey=b4ca793e&s=avatar`,
+        url:`https://www.omdbapi.com/?apikey=b4ca793e&s=avatar`,
         success: result => {
             const films = result.Search;
             let elementCard = ``;
@@ -58,7 +58,7 @@ window.addEventListener("load", () => {
             // Disini saya terpaksa tidak menggunakan callback berupa arrow function karena saya ingin menggunakan 'this' untuk menangkap imdbID dari setiap data
             $('.button-modal-detail-film').on('click', function() {
                 $.ajax({
-                    url:`http://www.omdbapi.com/?apikey=b4ca793e&i=${$(this).data('idimdb')}`,
+                    url:`https://www.omdbapi.com/?apikey=b4ca793e&i=${$(this).data('idimdb')}`,
                     success: element => {
                         const detailFilm = dataDetailFilm(element);
                         $('.modal-body').html(detailFilm)
@@ -77,7 +77,7 @@ window.addEventListener("load", () => {
 
 $('.tombol-keramat').on('click', () => {
     $.ajax({
-        url:`http://www.omdbapi.com/?apikey=b4ca793e&s=${$('.keyword-yang-diinput').val()}`,
+        url:`https://www.omdbapi.com/?apikey=b4ca793e&s=${$('.keyword-yang-diinput').val()}`,
         success: result => {
             const films = result.Search;
             let elementCard = ``;
@@ -89,7 +89,7 @@ $('.tombol-keramat').on('click', () => {
             // Disini saya terpaksa tidak menggunakan callback berupa arrow function karena saya ingin menggunakan 'this' untuk menangkap imdbID dari setiap data
             $('.button-modal-detail-film').on('click', function() {
                 $.ajax({
-                    url:`http://www.omdbapi.com/?apikey=b4ca793e&i=${$(this).data('idimdb')}`,
+                    url:`https://www.omdbapi.com/?apikey=b4ca793e&i=${$(this).data('idimdb')}`,
                     success: element => {
                         const detailFilm = dataDetailFilm(element);
                         $('.modal-body').html(detailFilm)
